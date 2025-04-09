@@ -58,4 +58,8 @@ The selected lines in the code, showed below, shows the idea of this method:
         v = v + (k1 + 2.0d0*k2 + 2.0d0*k3 + k4) / 6.0d0
     end subroutine rk4
 ```
+
+An example of comparisson of the results using this method and the analitical result is shown below:
+
+![temporal development of the adimensional velocity to St=1.005](figs/ST1005.PNG)
 ## Code 2 - Methods of the bissection and the false position
