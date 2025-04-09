@@ -39,7 +39,7 @@ The selected lines in the code, showed below, shows the idea of this method:
         real(8) :: dv
         real(8) :: Re_s
         Re_s = 0.001
-        ! funcoes a ser considereada
+        ! funcoes a serem consideradas
         !dv = (1.0d0-v)/St
         dv = (1- v- (3/8)*Re_s*v**2)/St
     end function dvdt
