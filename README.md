@@ -31,11 +31,16 @@ This code aims to calculate the velocity of the sphere in this process of sedime
 This method has the following idea
 
 ```
+fortran program
+    do i = 1,n ! iterando no passo de tempo
+        call rk4(v_star, t_star, dt, St)
+        t_star = t_star + dt  ! Avança no tempo
     function dvdt(v, St) result(dv)
         real(8), intent(in) :: v, St
         real(8) :: dv
         real(8) :: Re_s
-        Re_s = 0.00000000001
+        Re_s = 0.001
+        ! funcoes a ser considereada
         !dv = (1.0d0-v)/St
         dv = (1- v- (3/8)*Re_s*v**2)/St
     end function dvdt
