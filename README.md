@@ -17,7 +17,7 @@ $$
 or in its adimensional version:
 
 $$
-    St\frac{dv_z^{\ast}}{dt} = -v_z^{\ast}-\frac{3}{8}Re_s v_z^{2^\ast}+1
+    St\frac{dv_z^{\ast}}{dt^{\ast}} = -v_z^{\ast}-\frac{3}{8}Re_s v_z^{2^\ast}+1
 $$
 
 Its version without the drag version as shown below:
@@ -28,7 +28,7 @@ $$
 
 This code aims to calculate the velocity of the sphere in this process of sedimentation using the 4th order runge kutta method.
 
-This method has the following idea
+The selected lines in the code, showed below, shows the idea of this method:
 
 ```fortran
     do i = 1,n ! iterando no passo de tempo
@@ -58,3 +58,4 @@ This method has the following idea
         v = v + (k1 + 2.0d0*k2 + 2.0d0*k3 + k4) / 6.0d0
     end subroutine rk4
 ```
+## Code 2 - Methods of the bissection and the false position
