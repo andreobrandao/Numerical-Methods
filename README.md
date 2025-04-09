@@ -30,8 +30,7 @@ This code aims to calculate the velocity of the sphere in this process of sedime
 
 This method has the following idea
 
-```
-fortran
+```fortran
     do i = 1,n ! iterando no passo de tempo
         call rk4(v_star, t_star, dt, St)
         t_star = t_star + dt  ! Avança no tempo
