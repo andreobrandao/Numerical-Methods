@@ -65,3 +65,12 @@ An example of comparisson of the results using this method and the analitical re
   
 *Figura 1 – temporal development of the adimensional velocity to St=1.005.*
 ## Code 2 - Methods of the bissection and the false position
+
+The numerical methods presented here aim to find the zero of functions. Both methods have some strong qualities and some defects. they're based in the idea that if you enter with a interval, and use its convergence method, this initial interval narrow around the root of the function studied.
+
+In the bissection method the idea is that the interval is always narrowed by the half of the previous interval. then it's checked in which new interval the root is, then the process repeats untill you reach the tolerence you want.
+Considering $x_l$ the lower value of the interval and $x_u$ the upper value, then the new value will be:
+$$
+    x_m=\frac{x_l+x_u}{2}
+$$
+then it's checked if $f(x_m)*f(x_l)\le 0$, if yes then $x_u$ is updated to $x_m$, if not then $x_u$ is updated to $x_m$, and the process repeats.
