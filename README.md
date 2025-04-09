@@ -61,5 +61,5 @@ The selected lines in the code, showed below, shows the idea of this method:
 
 An example of comparisson of the results using this method and the analitical result is shown below:
 
-![temporal development of the adimensional velocity to St=1.005](figs/ST1005.PNG)
+![temporal development of the adimensional velocity to St=1.005](figures/St1005.PNG)
 ## Code 2 - Methods of the bissection and the false position
