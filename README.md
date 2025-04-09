@@ -17,13 +17,13 @@ $$
 or in its adimensional version:
 
 $$
-St\frac{dv^*}{dt^*} = -v_z^*-\frac{3}{8}Re_sv_z^2*+1
+    St\frac{dv^*}{dt^*} = -v_z^*-\frac{3}{8}Re_sv_z^2*+1
 $$
 
 Its version without the drag version as shown below:
 
 $$
-St\frac{dv^*}{dt^*} = 1-v_z^*
+    St\frac{dv^*}{dt^*} = 1-v_z^*
 $$
 
 This code aims to calculate the velocity of the sphere in this process of sedimentation using the 4th order runge kutta method.
