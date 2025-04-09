@@ -23,7 +23,7 @@ $$
 Its version without the drag version as shown below:
 
 $$
-    St\frac{dv^*}{dt^*} = 1-v_z^*
+    St\frac{dv_z^{\ast}}{dt^{\ast}} = 1-v_z^{\ast}
 $$
 
 This code aims to calculate the velocity of the sphere in this process of sedimentation using the 4th order runge kutta method.
