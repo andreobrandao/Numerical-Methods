@@ -17,7 +17,7 @@ $$
 or in its adimensional version:
 
 $$
-    St\frac{dv^*}{dt^*} = -v_z^*-\frac{3}{8}Re_s v_z^2+1
+    St\frac{dv_z}{dt} = -v_z-\frac{3}{8}Re_s v_z^2+1
 $$
 
 Its version without the drag version as shown below:
