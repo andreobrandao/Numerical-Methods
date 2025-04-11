@@ -71,6 +71,6 @@ The numerical methods presented here aim to find the zero of functions. Both met
 In the bissection method the idea is that the interval is always narrowed by the half of the previous interval. then it's checked in which new interval the root is, then the process repeats untill you reach the tolerence you want.
 Considering $x_l$ the lower value of the interval and $x_u$ the upper value, then the new value will be:
 $$
-    x_m = \frac{x_l+x_u}{2}
+    x_m = \frac{x_l + x_u}{2}
 $$
 then it's checked if $f(x_m)*f(x_l)\le 0$, if yes then $x_u$ is updated to $x_m$, if not then $x_u$ is updated to $x_m$, and the process repeats.
