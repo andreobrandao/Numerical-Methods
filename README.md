@@ -81,7 +81,7 @@ The false position method takes in consideration the proximity of the function a
 The new value of the interval is defined using the next equation:
 
 $$
-    x_m = x_u - \frac{f(u) - (x_l - x_u)}{f(x_l) f(x_u)}
+    x_m = x_u - \frac{f(u)\cdot (x_l - x_u)}{f(x_l) f(x_u)}
 $$
 
 then just like the previous method it's checked if $f(x_m)*f(x_l)\le 0$, if yes then $x_u$ is updated to $x_m$, if not then $x_u$ is updated to $x_m$, and the process repeats.
