@@ -9,7 +9,7 @@
 The present repository aims to serve as a place to hold all the fortran codes i write during the discipline of Numerical Methods in mechanical sciences.
 Below it's explained how it's organized with the explanation of each code presented in the [code folder](./codes).
 
-Along with the codes, in the [Analysis](./Analysis) folder is the pdf files with some analysis made with every code developed.
+Along with the codes, in the [Analysis](./Analysis) folder is the pdf files with some analysis made with some of the codes developed.
 
 ## Code 1 - 4th order Runge kutta method
 
