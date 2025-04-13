@@ -76,3 +76,12 @@ $$
 $$
 
 then it's checked if $f(x_m)*f(x_l)\le 0$, if yes then $x_u$ is updated to $x_m$, if not then $x_u$ is updated to $x_m$, and the process repeats.
+
+The false position method takes in consideration the proximity of the function analyzed in the values of the interval, and narrow this interval considering this proximity.
+The new value of the interval is defined using the next equation:
+
+$$
+    x_m = x_u - \frac{f(u) - (x_l - x_u)}{f(x_l) f(x_u)}
+$$
+
+then just like the previous method it's checked if $f(x_m)*f(x_l)\le 0$, if yes then $x_u$ is updated to $x_m$, if not then $x_u$ is updated to $x_m$, and the process repeats.
