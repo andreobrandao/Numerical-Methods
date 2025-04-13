@@ -1,4 +1,5 @@
 # Repositório de Métodos numéricos
+![Unb](figures/logo-unb.png)
 ### André Brandão
 
 The present repository aims to serve as a place to hold all the fortran codes i write during the discipline of Numerical Methods in mechanical sciences.
