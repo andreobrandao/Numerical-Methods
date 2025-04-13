@@ -1,5 +1,4 @@
-# Repositório de Métodos numéricos
-### André Brandão
+# Repositório de Métodos numéricos - André Brandão
 
 <p align="center">
   <img src="figures/logo-unb.png" width="200"/>
