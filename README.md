@@ -69,6 +69,11 @@ An example of comparisson of the results using this method and the analitical re
 ![temporal development of the adimensional velocity to St=1.005](figures/St1005.PNG)
   
 *Figura 1 – temporal development of the adimensional velocity to St=1.005.*
+
+### How to use
+
+To run the program, run "ifx program_2.f90" and then run the executable file with "./a.out".
+
 ## Code 2 - Methods of the bissection and the false position
 
 The numerical methods presented here aim to find the zero of functions. Both methods have some strong qualities and some defects. they're based in the idea that if you enter with a interval, and use its convergence method, this initial interval narrow around the root of the function studied.
