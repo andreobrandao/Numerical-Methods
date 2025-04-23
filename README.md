@@ -104,3 +104,9 @@ The Müller method makes the approximation to the root of the given function def
 $$
   x_{i+1} = x_i - \frac{2c}{b \pm \sqrt{b^2 - 4ac}}
 $$
+
+where:
+
+$$
+  a = \frac{\delta_1 - \delta_0}{h_1 - h_o},\ b = ah_1 + \delta_1,\ c = f(x_2) 
+$$
