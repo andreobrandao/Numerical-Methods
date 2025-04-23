@@ -110,3 +110,9 @@ where:
 $$
   a = \frac{\delta_1 - \delta_0}{h_1 - h_o},\ b = ah_1 + \delta_1,\ c = f(x_2) 
 $$
+
+and:
+
+$$
+  h_0 = x_1 - x_0,\ h_1 = x_2-x_1,\ \delta_0 = \frac{f(x_1) - f(x_0)}{x_1 - x_0},\ \delta_1 = \frac{f(x_2) - f(x_1)}{x_2 - x_1}
+$$
