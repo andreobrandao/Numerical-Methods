@@ -119,3 +119,6 @@ $$
 
 The following figure shows the difference between the two methods:
 
+![Comparisson between the Secant and Müller method](figures/secant_muller.png)
+  
+*Figura 2 – Comparisson between the Secant and Müller method.*
