@@ -1,7 +1,7 @@
 # Repositório de Métodos Numéricos - André Brandão
 
 <p align="center">
-  <img src="figures/logo-unb.png" width="200"/>
+  <img src="figures/logo-unb.png" width="600"/>
 </p>
 
 
@@ -90,3 +90,32 @@ $$
 $$
 
 then just like the previous method it's checked if $f(x_m)*f(x_l)\le 0$, if yes then $x_u$ is updated to $x_m$, if not then $x_u$ is updated to $x_m$, and the process repeats.
+
+## Code 3 - Methods of the Secant and Müller
+The third program written in fortran makes a comparisson between the secant method and the Müller method to find the roots of a given polynomial. This comparisson is given in terms of the relative error in % to every iteration untill the defined tolerance is achieved.
+The secant method follows the idea of the newton-raphson method, with the difference that it uses two different points from the function or available tabeled numbers and its f(x) values to approximate the root of the studied equation using a line. The following equation shows this approximation:
+
+$$
+  x_{i+1}=x_i - \frac{f(x_i)\cdot(x_{i-1} - x_i)}{f(x_{i-1}) - f(x_i)}
+$$
+
+The Müller method makes the approximation to the root of the given function defining another curve that coincides with the studied function in three points (initial guesses). The root is approximated by the following relation:
+
+$$
+  x_{i+1} = x_i - \frac{2c}{b \pm \sqrt{b^2 - 4ac}}
+$$
+
+where:
+
+$$
+  a = \frac{\delta_1 - \delta_0}{h_1 - h_o},\ b = ah_1 + \delta_1,\ c = f(x_2) 
+$$
+
+and:
+
+$$
+  h_0 = x_1 - x_0,\ h_1 = x_2-x_1,\ \delta_0 = \frac{f(x_1) - f(x_0)}{x_1 - x_0},\ \delta_1 = \frac{f(x_2) - f(x_1)}{x_2 - x_1}
+$$
+
+The following figure shows the difference between the two methods:
+
