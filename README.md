@@ -69,6 +69,11 @@ An example of comparisson of the results using this method and the analitical re
 ![temporal development of the adimensional velocity to St=1.005](figures/St1005.PNG)
   
 *Figura 1 – temporal development of the adimensional velocity to St=1.005.*
+
+### How to use
+
+To run the program, run "ifx program_1.f90" and then run the executable file with "./a.out".
+
 ## Code 2 - Methods of the bissection and the false position
 
 The numerical methods presented here aim to find the zero of functions. Both methods have some strong qualities and some defects. they're based in the idea that if you enter with a interval, and use its convergence method, this initial interval narrow around the root of the function studied.
@@ -90,6 +95,10 @@ $$
 $$
 
 then just like the previous method it's checked if $f(x_m)*f(x_l)\le 0$, if yes then $x_u$ is updated to $x_m$, if not then $x_u$ is updated to $x_m$, and the process repeats.
+
+### How to use
+
+To run the program, run "ifx program_2.f90" and then run the executable file with "./a.out".
 
 ## Code 3 - Methods of the Secant and Müller
 The third program written in fortran makes a comparisson between the secant method and the Müller method to find the roots of a given polynomial. This comparisson is given in terms of the relative error in % to every iteration untill the defined tolerance is achieved.
@@ -119,3 +128,10 @@ $$
 
 The following figure shows the difference between the two methods:
 
+![Comparisson between the Secant and Müller method](figures/secant_muller.png)
+  
+*Figura 2 – Comparisson between the Secant and Müller method.*
+
+### How to use
+
+To run the program, run "ifx program_1.f90" and then run the executable file with "./a.out". The file "grafico.plt" has the gnuplot commands to plot the graph "Relative error (%) x iteration". So you must have the gnuplot installed in your pc.
