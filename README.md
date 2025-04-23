@@ -1,7 +1,7 @@
 # Repositório de Métodos Numéricos - André Brandão
 
 <p align="center">
-  <img src="figures/logo-unb.png" width="200"/>
+  <img src="figures/logo-unb.png" width="600"/>
 </p>
 
 
