@@ -135,3 +135,9 @@ The following figure shows the difference between the two methods:
 ### How to use
 
 To run the program, run "ifx program_1.f90" and then run the executable file with "./a.out". The file "grafico.plt" has the gnuplot commands to plot the graph "Relative error (%) x iteration". So you must have the gnuplot installed in your pc.
+
+The usual output graph of this code is shown below:
+
+![Relavtive error x iteration](figures/RE_code3.png)
+  
+*Figura 3 – Relavtive error x iteration.*
