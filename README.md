@@ -96,5 +96,5 @@ then just like the previous method it's checked if $f(x_m)*f(x_l)\le 0$, if yes 
 The secant method follows the idea of the newton-raphson method, with the difference that it uses two different points from the function or available tabeled numbers and its f(x) values to approximate the root of the studied equation. The following equation shows this approximation:
 
 $$
-  x_{i+1}=x_i - \frac{f(x_i)\cdot(x_{i-1} - x_i)}{f(x_{i-1} - f(x_i))}
+  x_{i+1}=x_i - \frac{f(x_i)\cdot(x_{i-1} - x_i)}{f(x_{i-1}) - f(x_i)}
 $$
