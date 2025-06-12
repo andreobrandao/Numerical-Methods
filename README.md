@@ -161,3 +161,8 @@ A fractal, in this context, is a colorful graphical map where each point represe
 These fractals help to visualize the sensitivity of the method to the initial values and reveal intricate structures in the convergence landscape.
 
 Examples of such fractals are shown below:
+
+<p align="center">
+  <img src="figures/mapa_1.png" width="45%" />
+  <img src="figures/mapa_2.png" width="45%" />
+</p>
