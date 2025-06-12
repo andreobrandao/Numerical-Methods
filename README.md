@@ -163,6 +163,6 @@ These fractals help to visualize the sensitivity of the method to the initial va
 Examples of such fractals are shown below:
 
 <p align="center">
-  <img src="figures/mapa_1.png" width="45%" />
-  <img src="figures/mapa_2.png" width="45%" />
+  <img src="figures/mapa_1.png" width="50%" />
+  <img src="figures/mapa_2.png" width="50%" />
 </p>
