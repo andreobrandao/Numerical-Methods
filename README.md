@@ -136,6 +136,8 @@ The following figure shows the difference between the two methods:
 
 To run the program, run "ifx program_3.f90" and then run the executable file with "./a.out". The file "grafico.plt" has the gnuplot commands to plot the graph "Relative error (%) x iteration". So you must have the gnuplot installed in your pc.
 
+## Code 4 - Methods of Bairstow
+
 The usual output graph of this code is shown below:
 
 ![Relavtive error x iteration](figures/RE_code3.png)
