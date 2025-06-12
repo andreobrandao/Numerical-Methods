@@ -142,4 +142,22 @@ The usual output graph of this code is shown below:
   
 *Figura 3 – Relavtive error x iteration.*
 
-## Code 4 - Methods of Bairstow
+## Code 4 - Method of Bairstow
+
+The code 4 implements Bairstow's method to find the roots of any polynomial function. The method is based on dividing the polynomial by a second-degree polynomial of the form:
+
+$$
+f(x)=x^2 -r\cdot x - s
+$$
+
+The goal is to adjust the values of r and s until the remainder of the division is zero. This adjustment is performed using the Newton-Raphson method.
+
+Once the division yields no remainder, the quadratic factor is considered a root (or pair of roots, in the case of complex conjugates), and the remaining quotient becomes the new polynomial to analyze. This process repeats until all roots of the original polynomial are found.
+
+Depending on the initial guesses for r and s, the method may fail to converge to a solution. To explore how different initial values affect convergence, this program also generates a fractal map that visualizes the convergence behavior of Bairstow's method over a selected range of r and s values.
+
+A fractal, in this context, is a colorful graphical map where each point represents an initial guess (r,s), and the color indicates the number of iterations required to converge. Points that do not converge within a set number of iterations are typically colored black or left blank.
+
+These fractals help to visualize the sensitivity of the method to the initial values and reveal intricate structures in the convergence landscape.
+
+Examples of such fractals are shown below:
