@@ -163,6 +163,13 @@ These fractals help to visualize the sensitivity of the method to the initial va
 Examples of such fractals are shown below:
 
 <p align="center">
-  <img src="figures/mapa_1.png" width="50%" />
-  <img src="figures/mapa_2.png" width="50%" />
+  <img src="figures/mapa_1.png" width="45%" />
+  <img src="figures/mapa_2.png" width="45%" />
 </p>
+*Figura 4 – Example of fractal maps to polynomials of the 3th and 5th degree*
+
+## How to use
+
+To run the program, run "ifx program_4.f90" and then run the executable file with "./a.out". The file "mapa.gnu" has the gnuplot commands to plot the fractal map. So after the file "mapa.dat" is generated run "gnuplot -persist mapa.gnu" to create the map.
+
+When you run the program it will be asked to enter with the coefficients of the polynomial, the initial guess of r and s, and then a range of r and s to create the fractal. Inside the file "mapa.gnu", there are two lines written set xrange [-100:100] and set yrange [-100:100], what means that it's set to create the map in this range. If you choose another range in the fortran code then adjust these lines in the gnuplot file so it will run as it should.
