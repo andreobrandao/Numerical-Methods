@@ -8,8 +8,6 @@
 This repository serves as a collection of all the Fortran codes I wrote during the Numerical Methods course in Mechanical Sciences.  
 Below is an overview of the folder structure and explanations for each code located in the [codes folder](./codes).
 
-Additionally, the [Analysis](./Analysis) folder contains PDF files with analyses performed using some of the developed codes.
-
 ---
 
 ## Code 1 - 4th Order Runge-Kutta Method
@@ -234,7 +232,7 @@ Make sure to adjust `set xrange` and `set yrange` in `mapa.gnu` if you change th
 
 Two programs solve two different problems.
 
-The first code [code 5.1](./codes/program%205/program5.f90) solves a 5x5 system that arises from studying concentrations in interconnected reactors. Based on input concentrations and flow rates, it calculates the output concentrations.
+The first code [program5.f90](./codes/program%205/program5.f90) solves a 5x5 system that arises from studying concentrations in interconnected reactors. Based on input concentrations and flow rates, it calculates the output concentrations.
 
 This system is solved using LU decomposition. The coefficient matrix $\( \mathbf{A} \)$ is decomposed into:
 
@@ -304,14 +302,14 @@ $$
 f(x,y) = 4x + 2y + x^2 - 2x^4 + 2xy - 3y^2
 $$
 
-the program [code 6.1](./codes/program%206/program6_random.f90) that solves using the random search method uses an equal and random search space for the following number of points [50, 200, 350, 500, 700, 1000], and compares the error of the value found for these two cases when compared to the previous case with fewer number of search points. It plots in the terminal window the tables of comparison.
+the program [program6_random.f90](./codes/program%206/program6_random.f90) that solves using the random search method uses an equal and random search space for the following number of points [50, 200, 350, 500, 700, 1000], and compares the error of the value found for these two cases when compared to the previous case with fewer number of search points. It plots in the terminal window the tables of comparison.
 
-the program [code 6.2](./codes/program%206/program6_aclive.f90) that solves using the maximum slope method starts from the starting point (0,0). It plots a table with the values needed to plot the contour lines and the search path for the optimal point in the file **trajetoria.txt**, as shown in the image below.
+the program [program6_aclive.f90](./codes/program%206/program6_aclive.f90) that solves using the maximum slope method starts from the starting point (0,0). It plots a table with the values needed to plot the contour lines and the search path for the optimal point in the file **trajetoria.txt**, as shown in the image below.
 
 ![Relative error vs iteration](figures/program6.png)  
 *Figure 6 – contour lines and the search path*
 
-the program [code 6.3](./codes/program%206/program6_grad.f90) that solves using the conjugate gradient method also starts from the initial point (0,0). And plots the values found in each iteration in the terminal window itself.
+the program [program6_grad.f90](./codes/program%206/program6_grad.f90) that solves using the conjugate gradient method also starts from the initial point (0,0). And plots the values found in each iteration in the terminal window itself.
 
 ### How to use
 
@@ -350,5 +348,30 @@ $$
 The idea is to discretize this space into n x n nodes and associate the temperature with each node using the expression above, and then determine the average temperature given by the following expression:
 
 $$
-\overline{T} = \frac{1}{8 \cdot 6} \int_0^8 \int_0^6 T(x, y) \, dy \, dx
+\overline{T} = \frac{1}{8 \cdot 6} \int_0^8 \int_0^6 T(x, y) dy dx
 $$
+
+The program [program7.f90](./codes/program%207/program7.f90) works manually, where you enter the grid size nxn, and it will compute the average temperature for all three cases.
+
+Program [program7_varre.f90](./codes/program%207/program7_varre.f90) solves for different grid sizes and generates a comparison table between the three methods, which can be viewed by running the Python program in the same directory.
+
+### How to use
+
+Compile:
+
+```bash
+ifx program7.f90
+ifx program7_varre.f90
+```
+
+Run to each one:
+
+```bash
+./a.out
+```
+
+and to run the contour lines and the search path
+
+```bash
+python3 graph7.py
+```
