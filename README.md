@@ -304,4 +304,9 @@ $$
 f(x,y) = 4x + 2y + x^2 - 2x^4 + 2xy - 3y^2
 $$
 
-the program [code 6.1](./codes/program%206/program6_random.f90)that solves using the random search method uses an equal and random search space for the following number of points [50, 200, 350, 500, 700, 1000], and compares the error of the value found for these two cases when compared to the previous case with fewer number of search points.
+the program [code 6.1](./codes/program%206/program6_random.f90) that solves using the random search method uses an equal and random search space for the following number of points [50, 200, 350, 500, 700, 1000], and compares the error of the value found for these two cases when compared to the previous case with fewer number of search points. It plots in the terminal window the tables of comparison.
+
+the program [code 6.2](./codes/program%206/program6_aclive.f90) that solves using the maximum slope method starts from the starting point (0,0). It plots a table with the values needed to plot the contour lines and the search path for the optimal point in the file **trajetoria.txt**, as shown in the image below.
+
+![Relative error vs iteration](figures/program6.png)  
+*Figure 6 – contour lines and the search path*
