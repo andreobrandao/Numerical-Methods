@@ -298,9 +298,10 @@ python3 mapa_program5.py
 
 Three programs solve the same problem of multidimensional optimization here.
 
-The idea of the programs here is to find a critical point of f(x,y) using three different methods: Random search, Maximum slope method and Conjugate gradient method.
+The idea of the programs here is to find a critical point of f(x,y) using three different methods: **Random search**, **Maximum slope method (aclive máximo)** and **Conjugate gradient method**.
 
 $$
 f(x,y) = 4x + 2y + x^2 - 2x^4 + 2xy - 3y^2
 $$
 
+the program [code 6.1](./codes/program%206/program6_random.f90)that solves using the random search method uses an equal and random search space for the following number of points [50, 200, 350, 500, 700, 1000], and compares the error of the value found for these two cases when compared to the previous case with fewer number of search points.
