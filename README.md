@@ -265,3 +265,27 @@ Run:
 ```bash
 ./a.out
 ```
+
+The second code is associated with the determination of the transient one-dimensional temperature distribution in a solid fuel associated with a nuclear reactor, subject to a heat conduction process with internal generation, with a surroundind flow of heated air.
+
+To get the time distribution of the one-dimensional temperature it's used the finite difference method to the x direction. Considering the symmetry of the problem only half of the geometry is simulated, the other half follows the same idea.
+
+This code plots the temperature from the center of the reactor to its edge over time, or in other words, creates a file that contains the node and the temperature over time. Plus it plots a textfile withe final temperature. There is a python file that creates the temporal profile of temperature development along the one-dimensional grid.
+### How to use
+
+Compile:
+
+```bash
+ifx program_5_2.f90
+```
+
+Run:
+
+```bash
+./a.out
+```
+and to run the graph
+
+```bash
+python3 mapa_program5.py
+```
