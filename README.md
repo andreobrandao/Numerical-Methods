@@ -16,21 +16,21 @@ Additionally, the [Analysis](./Analysis) folder contains PDF files with analyses
 
 This code studies a sphere sedimenting in a fluid. Considering the drag force, Newton’s second law applied to this problem reads:
 
-\[
+$$
 m_p \frac{dv_z}{dt} = -6\pi \eta a v_z - \frac{9}{4} \pi \rho_r a^2 v_z^2 + \frac{4}{3} \pi a^3 \Delta \rho g
-\]
+$$
 
 Or in its dimensionless form:
 
-\[
+$$
 St \frac{dv_z^*}{dt^*} = -v_z^* - \frac{3}{8} Re_s (v_z^*)^2 + 1
-\]
+$$
 
 The drag-free version is:
 
-\[
+$$
 St \frac{dv_z^*}{dt^*} = 1 - v_z^*
-\]
+$$
 
 This code calculates the velocity of the sphere during sedimentation using the 4th order Runge-Kutta method.
 
@@ -93,17 +93,17 @@ These numerical methods find the root (zero) of functions. Both have advantages 
 
 In the **bisection method**, the interval is halved each iteration. Given lower bound \(x_l\) and upper bound \(x_u\), the midpoint is:
 
-\[
+$$
 x_m = \frac{x_l + x_u}{2}
-\]
+$$
 
 If \(f(x_m) \times f(x_l) \leq 0\), then the root lies between \(x_l\) and \(x_m\), so update \(x_u = x_m\); otherwise, update \(x_l = x_m\). Repeat until the desired tolerance is reached.
 
 The **false position method** takes into account the function values at the interval ends to better approximate the root:
 
-\[
+$$
 x_m = x_u - \frac{f(x_u) \cdot (x_l - x_u)}{f(x_l) - f(x_u)}
-\]
+$$
 
 Then the interval is updated similarly based on the sign of \(f(x_m) \times f(x_l)\).
 
@@ -129,27 +129,27 @@ This program compares the Secant and Müller methods for root finding of a given
 
 The **Secant method** approximates the root using two previous points:
 
-\[
+$$
 x_{i+1} = x_i - \frac{f(x_i) \cdot (x_{i-1} - x_i)}{f(x_{i-1}) - f(x_i)}
-\]
+$$
 
 The **Müller method** fits a parabola through three points and approximates the root by:
 
-\[
+$$
 x_{i+1} = x_i - \frac{2c}{b \pm \sqrt{b^2 - 4ac}}
-\]
+$$
 
 where:
 
-\[
+$$
 a = \frac{\delta_1 - \delta_0}{h_1 - h_0}, \quad b = a h_1 + \delta_1, \quad c = f(x_2)
-\]
+$$
 
 and
 
-\[
+$$
 h_0 = x_1 - x_0, \quad h_1 = x_2 - x_1, \quad \delta_0 = \frac{f(x_1) - f(x_0)}{x_1 - x_0}, \quad \delta_1 = \frac{f(x_2) - f(x_1)}{x_2 - x_1}
-\]
+$$
 
 Comparison plot:
 
@@ -183,9 +183,9 @@ Output example:
 
 This program implements Bairstow’s method to find roots of any polynomial by dividing it by a quadratic polynomial:
 
-\[
+$$
 f(x) = x^2 - r x - s
-\]
+$$
 
 The method iteratively adjusts \(r\) and \(s\) using Newton-Raphson until the remainder is zero.
 
@@ -238,19 +238,19 @@ The first code [code 5.1](./codes/program%205/program5.f90) solves a 5x5 system 
 
 This system is solved using LU decomposition. The coefficient matrix \( \mathbf{A} \) is decomposed into:
 
-\[
+$$
 \mathbf{A} = \mathbf{L} \mathbf{U}
-\]
+$$
 
 where \(\mathbf{L}\) is lower triangular and \(\mathbf{U}\) is upper triangular. Then the following systems are solved in order:
 
-\[
+$$
 \mathbf{L} \cdot \mathbf{d} = \mathbf{b}
-\]
+$$
 
-\[
+$$
 \mathbf{U} \cdot \mathbf{x} = \mathbf{d}
-\]
+$$
 
 ### How to use
 
