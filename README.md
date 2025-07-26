@@ -173,3 +173,16 @@ Examples of such fractals are shown below:
 To run the program, run "ifx program_4.f90" and then run the executable file with "./a.out". The file "mapa.gnu" has the gnuplot commands to plot the fractal map. So after the file "mapa.dat" is generated run "gnuplot -persist mapa.gnu" to create the map.
 
 When you run the program it will be asked to enter with the coefficients of the polynomial, the initial guess of r and s, and then a range of r and s to create the fractal. Inside the file "mapa.gnu", there are two lines written set xrange [-100:100] and set yrange [-100:100], what means that it's set to create the map in this range. If you choose another range in the fortran code then adjust these lines in the gnuplot file so it will run as it should.
+
+## Codes 5 - Linear systems solutions
+
+Two codes were written here to solve two different problems. 
+
+The first code [code 5.1](./codes/program 5/program5.f90) aim to solve a 5x5 system, obtained when studying the concentration of reactors conneceted with each other, based in the input concentration and flow rate of an entity the idea is to calculate the output concentrations of these reactors.
+
+To solve this 5x5 system, it's used the LU decomposing to solve this system. 
+
+What means it first decompose the coefficient matrix in the L and U matrixes, then solves the following relation in this respective order. $/textbf{L}/cdot /textbf{d} = /textbf{b}$ and then $/textbf{U}/cdot /textbf{x} = /textbf{d}$.
+
+To run the program, run "ifx program_5.f90" and then run the executable file with "./a.out".
+
