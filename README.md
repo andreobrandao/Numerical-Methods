@@ -310,3 +310,27 @@ the program [code 6.2](./codes/program%206/program6_aclive.f90) that solves usin
 
 ![Relative error vs iteration](figures/program6.png)  
 *Figure 6 – contour lines and the search path*
+
+the program [code 6.3](./codes/program%206/program6_grad.f90) that solves using the conjugate gradient method also starts from the initial point (0,0). And plots the values found in each iteration in the terminal window itself.
+
+### How to use
+
+Compile:
+
+```bash
+ifx program_6_random.f90
+ifx program_6_aclive.f90
+ifx program_6_grad.f90
+```
+
+Run to each one:
+
+```bash
+./a.out
+```
+
+and to run the contour lines and the search path
+
+```bash
+python3 mapa_program6.py
+```
