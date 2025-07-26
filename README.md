@@ -91,13 +91,13 @@ and run the executable:
 
 These numerical methods find the root (zero) of functions. Both have advantages and drawbacks. They are based on narrowing an initial interval that contains the root.
 
-In the **bisection method**, the interval is halved each iteration. Given lower bound \(x_l\) and upper bound \(x_u\), the midpoint is:
+In the **bisection method**, the interval is halved each iteration. Given lower bound $(x_l\)$ and upper bound $(x_u\)$, the midpoint is:
 
 $$
 x_m = \frac{x_l + x_u}{2}
 $$
 
-If \(f(x_m) \times f(x_l) \leq 0\), then the root lies between $(x_l\) and \(x_m)$, so update $(x_u = x_m)$; otherwise, update \(x_l = x_m\). Repeat until the desired tolerance is reached.
+If $(f(x_m) \times f(x_l) \leq 0\)$, then the root lies between $(x_l\)$ and $\(x_m)$, so update $(x_u = x_m)$; otherwise, update $(x_l = x_m\)$. Repeat until the desired tolerance is reached.
 
 The **false position method** takes into account the function values at the interval ends to better approximate the root:
 
@@ -187,13 +187,13 @@ $$
 f(x) = x^2 - r x - s
 $$
 
-The method iteratively adjusts \(r\) and \(s\) using Newton-Raphson until the remainder is zero.
+The method iteratively adjusts $\(r\)$ and $\(s\)$ using Newton-Raphson until the remainder is zero.
 
 Each quadratic factor corresponds to one or two roots (including complex conjugates). The polynomial is deflated by dividing out this factor and the process repeats until all roots are found.
 
-Since convergence depends on initial guesses for \(r\) and \(s\), this program can generate fractal maps visualizing convergence over ranges of \(r\) and \(s\).
+Since convergence depends on initial guesses for $\(r\)$ and $\(s\)$, this program can generate fractal maps visualizing convergence over ranges of $\(r\)$ and $\(s\)$.
 
-A fractal map is a colorful image where each pixel corresponds to an initial guess \((r,s)\), colored by the number of iterations to converge. Non-convergent points are black.
+A fractal map is a colorful image where each pixel corresponds to an initial guess $\((r,s)\)$, colored by the number of iterations to converge. Non-convergent points are black.
 
 Examples:
 
@@ -218,7 +218,7 @@ Run:
 ./a.out
 ```
 
-The program will ask for polynomial coefficients, initial guesses for \(r\) and \(s\), and a range for fractal generation.
+The program will ask for polynomial coefficients, initial guesses for $\(r\)$ and $\(s\)$, and a range for fractal generation.
 
 The gnuplot script `mapa.gnu` plots the fractal map. After generating `mapa.dat`, run:
 
@@ -236,13 +236,13 @@ Two programs solve two different problems.
 
 The first code [code 5.1](./codes/program%205/program5.f90) solves a 5x5 system that arises from studying concentrations in interconnected reactors. Based on input concentrations and flow rates, it calculates the output concentrations.
 
-This system is solved using LU decomposition. The coefficient matrix \( \mathbf{A} \) is decomposed into:
+This system is solved using LU decomposition. The coefficient matrix $\( \mathbf{A} \)$ is decomposed into:
 
 $$
 \mathbf{A} = \mathbf{L} \mathbf{U}
 $$
 
-where \(\mathbf{L}\) is lower triangular and \(\mathbf{U}\) is upper triangular. Then the following systems are solved in order:
+where $\(\mathbf{L}\)$ is lower triangular and $\(\mathbf{U}\)$ is upper triangular. Then the following systems are solved in order:
 
 $$
 \mathbf{L} \cdot \mathbf{d} = \mathbf{b}
