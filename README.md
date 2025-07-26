@@ -97,7 +97,7 @@ $$
 x_m = \frac{x_l + x_u}{2}
 $$
 
-If \(f(x_m) \times f(x_l) \leq 0\), then the root lies between \(x_l\) and \(x_m\), so update \(x_u = x_m\); otherwise, update \(x_l = x_m\). Repeat until the desired tolerance is reached.
+If \(f(x_m) \times f(x_l) \leq 0\), then the root lies between $(x_l\) and \(x_m)$, so update $(x_u = x_m)$; otherwise, update \(x_l = x_m\). Repeat until the desired tolerance is reached.
 
 The **false position method** takes into account the function values at the interval ends to better approximate the root:
 
@@ -105,7 +105,7 @@ $$
 x_m = x_u - \frac{f(x_u) \cdot (x_l - x_u)}{f(x_l) - f(x_u)}
 $$
 
-Then the interval is updated similarly based on the sign of \(f(x_m) \times f(x_l)\).
+Then the interval is updated similarly based on the sign of $(f(x_m) \times f(x_l))$.
 
 ### How to use
 
