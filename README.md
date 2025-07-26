@@ -301,5 +301,6 @@ Three programs solve the same problem of multidimensional optimization here.
 The idea of the programs here is to find a critical point of f(x,y) using three different methods: Random search, Maximum slope method and Conjugate gradient method.
 
 $$
-  f(x,y) = 4*x + 2*y + x^2 - 2*x^4 + 2*x*y - 3*y^2
+f(x,y) = 4x + 2y + x^2 - 2x^4 + 2xy - 3y^2
 $$
+
