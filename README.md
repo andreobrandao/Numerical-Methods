@@ -339,12 +339,16 @@ python3 mapa_program6.py
 
 Here include two programs, one to run manually and one to create a graph T_med x n.
 
-The idea here is to implement numerical integration techniques to approximate the definite integral of a given function f(x,y) within a specific interval $0/le x/le 6$ and $0/le y/le 8$. The methods available include the **Trapezoidal Rule**, **Simpson’s 1/3 Rule** and **Simpson’s 3/8 Rule**.
+The idea here is to implement numerical integration techniques to approximate the definite integral of a given function f(x,y) within a specific interval $0/le x/le 8$ and $0/le y/le 6$. The methods available include the **Trapezoidal Rule**, **Simpson’s 1/3 Rule** and **Simpson’s 3/8 Rule**.
 
-There is a two-dimensional domain of dimensions 6 x 8, and the temperature at each point in this domain is given by the expression:
+There is a two-dimensional domain of dimensions 8 x 6, and the temperature at each point in this domain is given by the expression:
 
 $$
-f(x,y) = 2* x* y + 2x - x^2 - 2y^2 + 72
+f(x,y) = 2xy + 2x - x^2 - 2y^2 + 72
 $$
 
 The idea is to discretize this space into n x n nodes and associate the temperature with each node using the expression above, and then determine the average temperature given by the following expression:
+
+$$
+\overline{T} = \frac{1}{8 \cdot 6} \int_0^8 \int_0^6 T(x, y) \, dy \, dx
+$$
