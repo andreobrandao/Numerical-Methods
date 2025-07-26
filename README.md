@@ -294,3 +294,12 @@ and to run the graph
 ```bash
 python3 mapa_program5.py
 ```
+## Code 6 - multidimensional optimization
+
+Three programs solve the same problem of multidimensional optimization here.
+
+The idea of the programs here is to find a critical point of f(x,y) using three different methods: Random search, Maximum slope method and Conjugate gradient method.
+
+$$
+  f(x,y) = 4*x + 2*y + x^2 - 2*x^4 + 2*x*y - 3*y^2
+$$
