@@ -271,6 +271,11 @@ The second code is associated with the determination of the transient one-dimens
 To get the time distribution of the one-dimensional temperature it's used the finite difference method to the x direction. Considering the symmetry of the problem only half of the geometry is simulated, the other half follows the same idea.
 
 This code plots the temperature from the center of the reactor to its edge over time, or in other words, creates a file that contains the node and the temperature over time. Plus it plots a textfile withe final temperature. There is a python file that creates the temporal profile of temperature development along the one-dimensional grid.
+
+An example of this temporal profile plotted by the python code is shown below:
+
+![Relative error vs iteration](figures/program5.png)  
+*Figure 5 – temporal profile*
 ### How to use
 
 Compile:
