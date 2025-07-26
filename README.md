@@ -182,7 +182,17 @@ The first code [code 5.1](./codes/program 5/program5.f90) aim to solve a 5x5 sys
 
 To solve this 5x5 system, it's used the LU decomposing to solve this system. 
 
-What means it first decompose the coefficient matrix in the L and U matrixes, then solves the following relation in this respective order. $/textbf{L}/cdot /textbf{d} = /textbf{b}$ and then $/textbf{U}/cdot /textbf{x} = /textbf{d}$.
+What means it first decompose the coefficient matrix in the L and U matrixes, then solves the following relation in this respective order. 
+
+$$
+/textbf{L}/cdot /textbf{d} = /textbf{b}
+$$
+
+and then 
+
+$$
+/textbf{U}/cdot /textbf{x} = /textbf{d}
+$$.
 
 To run the program, run "ifx program_5.f90" and then run the executable file with "./a.out".
 
