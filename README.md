@@ -23,15 +23,14 @@ $$
 Or in its dimensionless form:
 
 $$
-St \frac{dv_z^{*}}{dt^{*}} = -v_z^{*} - \frac{3}{8} Re_s (v_z^{*})^{2} + 1
+St \frac{dv_z^{\ast}}{dt^{\ast}} = -v_z^{\ast} - \frac{3}{8} Re_s (v_z^{\ast})^{2} + 1
 $$
 
 The drag-free version is:
 
 $$
-St \frac{dv_z^{*}}{dt^{*}} = 1 - v_z^{*}
+St \frac{dv_z^{\ast}}{dt^{\ast}} = 1 - v_z^{\ast}
 $$
-
 
 This code calculates the velocity of the sphere during sedimentation using the 4th order Runge-Kutta method.
 
