@@ -353,7 +353,10 @@ $$
 
 The program [program7.f90](./codes/program%207/program7.f90) works manually, where you enter the grid size nxn, and it will compute the average temperature for all three cases.
 
-Program [program7_varre.f90](./codes/program%207/program7_varre.f90) solves for different grid sizes and generates a comparison table between the three methods, which can be viewed by running the Python program in the same directory.
+Program [program7_varre.f90](./codes/program%207/program7_varre.f90) solves for the amount of grid nodes of [7, 13, 19, 25, 31, 37] and generates a comparison table between the three methods, which can be viewed by running the Python program in the same directory. The output graph to the grid nodes chosen are shown below:
+
+![Relative error vs iteration](figures/program7.png)  
+*Figure 7 – comparison among the three methods*
 
 ### How to use
 
